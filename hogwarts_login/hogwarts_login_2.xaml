@@ -1,0 +1,21 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="hogwarts_login.hogwarts_login_2"
+	x:Name="Window"
+	Title="hogwarts_login_2"
+	Width="636" Height="640" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" MouseDown="Window_MouseDown" Icon="slovo.png" WindowStartupLocation="CenterScreen">
+	<Window.Background>
+		<ImageBrush Stretch="Uniform"/>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.Background>
+			<ImageBrush ImageSource="pack://siteoforigin:,,,/logo_sivi.png"/>
+		</Grid.Background>
+		<Button x:Name="esc" Content="Button" HorizontalAlignment="Left" Height="0" Margin="316.377,548.885,0,0" VerticalAlignment="Top" Width="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" Click="esc_Click"/>
+		<TextBox x:Name="textboxUsername" HorizontalAlignment="Left" Height="39.75" Margin="255.536,180.578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130.607" Opacity="0.7" Text="Unesite naziv vrata čarolije"/>
+		<TextBox x:Name="textboxPassword" HorizontalAlignment="Right" Height="38.615" Margin="0,225.328,249.857,0" TextWrapping="Wrap" Text="Unesite ključ vrata čarolije" VerticalAlignment="Top" Width="130.607" Opacity="0.7"/>
+		<Button Content="Otključaj" HorizontalAlignment="Left" Height="28.613" Margin="232.821,278.029,0,0" VerticalAlignment="Top" Width="176.685"/>
+	</Grid>
+</Window>
