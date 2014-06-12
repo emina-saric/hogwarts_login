@@ -1,0 +1,24 @@
+﻿<Window x:Class="hogwarts_login.Grid_profesori"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Grid_profesori" Height="493" Width="636">
+    <Grid>
+        <Label Content="Pregled Profesora&#xD;&#xA;" HorizontalAlignment="Left" Margin="241,12,0,0" VerticalAlignment="Top"/>
+        <Menu HorizontalAlignment="Left" Height="33" Margin="10,49,0,0" VerticalAlignment="Top" Width="608">
+            <ComboBoxItem Content="Search by:"/>
+            <RadioButton x:Name="rb_ID" Content="ID" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="rb_ime" Content="Ime" Checked="RadioButton_Checked_1"/>
+            <TextBox x:Name="tb_search" Height="22" Width="82" TextChanged="tb_search_TextChanged" Visibility="Visible" >
+                <TextBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="{Binding Email1}" Command="{Binding Email1Command}" />
+                        <MenuItem Header="{Binding Email2}" Command="{Binding Email2Command}" />
+                    </ContextMenu>
+                </TextBox.ContextMenu>
+            </TextBox>
+        </Menu>
+        <Button Content="Spasi Izmjene" HorizontalAlignment="Left" Margin="440,97,0,0" VerticalAlignment="Top" Width="142"  Height="24" Click="Button_Click"/>
+        <DataGrid x:Name="grid_profesori" HorizontalAlignment="Left" Margin="21,146,0,0" VerticalAlignment="Top" Width="585" Height="306"/>
+
+    </Grid>
+</Window>
