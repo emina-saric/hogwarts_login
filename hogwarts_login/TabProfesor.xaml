@@ -1,0 +1,47 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="hogwarts_login.TabProfesor"
+	x:Name="Window"
+	Title="TabProfesor"
+	Width="640" Height="480">
+
+    <Grid x:Name="LayoutRoot">
+        <TabControl HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="632">
+            <TabItem x:Name="tb_podaci" Header="Podaci o Predmetu">
+                <Grid Background="#FF787878" Margin="0,1,0,-1">
+                    <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="356" Margin="10,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="Naziv predmeta: " HorizontalAlignment="Left" Margin="29,97,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Broj Casova:" HorizontalAlignment="Left" Margin="29,128,0,0" VerticalAlignment="Top"/>
+                    <Label Content="ID : " HorizontalAlignment="Left" Margin="29,66,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Broj Ucenika:" HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Profesor:" HorizontalAlignment="Left" Margin="29,190,0,0" VerticalAlignment="Top"/>
+                    <Button Content="DODAJ UCENIKA" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Width="232" Height="45"/>
+                    <Image Margin="68,237,430,56" Source="trash-full-icon.png" Stretch="Fill"/>
+                    <Label x:Name="lb_id_predmet" Content="" HorizontalAlignment="Left" Margin="149,66,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lb_naziv_predmeta" Content="" HorizontalAlignment="Left" Margin="149,97,0,0" VerticalAlignment="Top" Width="25"/>
+                    <Label x:Name="lb_broj_casova" Content="" HorizontalAlignment="Left" Margin="149,128,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lb_broj_ucenika" Content="" HorizontalAlignment="Left" Margin="149,159,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lb_prof" Content="" HorizontalAlignment="Left" Margin="149,190,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_pregled" Header="Pregled Ucenika">
+                <Grid Background="#FFE5E5E5">
+
+                    <Rectangle Fill="#FF787878" HorizontalAlignment="Left" Height="381.714" Margin="10,20.04,0,0" Stroke="Black" VerticalAlignment="Top" Width="606"/>
+                    <DataGrid x:Name="gd_ocjene" HorizontalAlignment="Left" Margin="10,154.897,0,0" VerticalAlignment="Top" Height="246.857" Width="606">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding ime_ucenika}" Header="Ime Ucenika" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Bodovi}" Header="Bodovi" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Minusi}" Header="Minusi" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Polagao}" Header="Polagao" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Polozio}" Header=" Polozio" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Ocjena}" Header="Ocjena" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

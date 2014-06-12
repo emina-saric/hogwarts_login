@@ -1,0 +1,45 @@
+﻿<Window
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            x:Class="hogwarts_login.Window1"
+            x:Name="Window"
+            Title="Window1"
+            Width="640" Height="480">
+
+    <Grid x:Name="LayoutRoot" Background="#FF787878" Margin="16,-1,-16,1">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="383" Margin="33,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="576"/>
+        <TextBox x:Name="tb_ime" HorizontalAlignment="Left" Height="23" Margin="197,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.417,2.522"/>
+        <TextBox x:Name="tb_prezime" HorizontalAlignment="Left" Height="23" Margin="197,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.017,0.043"/>
+        <Label Content="Ime : " HorizontalAlignment="Left" Margin="71,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="71,123,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dat_rodj" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum Rodjenja:" HorizontalAlignment="Left" Margin="71,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3,0.077"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="71,187,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_username" HorizontalAlignment="Left" Height="23" Margin="197,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_pass" HorizontalAlignment="Left" Height="23" Margin="197,218,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="71,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="Godina Studija:" HorizontalAlignment="Left" Margin="71,249,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_gd_studija" HorizontalAlignment="Left" Margin="197,249,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+        </ComboBox>
+        <ComboBox x:Name="cb_kuca" HorizontalAlignment="Left" Margin="197,279,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="cbox_Hufflepuff" Content="Hufflepuff" Height="25" Width="120"/>
+            <ComboBoxItem Name="cbox_Ravenclaw" Content="Ravenclaw" Height="25" Width="120"/>
+            <ComboBoxItem Name="cbox_Gryffindor" Content="Gryffindor" Height="25" Width="120"/>
+            <ComboBoxItem Name="cbox_Slytherin" Content="Slytherin" Height="25" Width="120"/>
+        </ComboBox>
+        <Label Content="Kuca:" HorizontalAlignment="Left" Margin="71,279,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rb_DA" Content="DA" HorizontalAlignment="Left" Margin="197,318,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rb_NE" Content="NE" HorizontalAlignment="Left" Margin="274,318,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prefekt:" HorizontalAlignment="Left" Margin="71,311,0,0" VerticalAlignment="Top"/>
+        <Image Margin="390,123,86,175" Source="1401475955_home.png" Stretch="Fill" Width="156" Height="151" RenderTransformOrigin="0.327,0.947"/>
+        <Button x:Name="b_spasi_ucenika" Content="Spasi Ucenika" HorizontalAlignment="Left" Margin="403,312,0,0" VerticalAlignment="Top" Width="143" Height="26" Click="Button_Click"/>
+    </Grid>
+</Window>
+

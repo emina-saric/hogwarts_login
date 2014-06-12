@@ -1,0 +1,26 @@
+﻿<Window x:Class="hogwarts_login.Profesor_dodavanje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Profesor_dodavanje" Height="434" Width="632">
+    <Grid Width="632" Height="439">
+        <Grid x:Name="LayoutRoot" Background="#FF787878" Margin="-10,-10,10,0">
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="340" Margin="42,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="558"/>
+            <TextBox x:Name="tb_ime" HorizontalAlignment="Left" Height="23" Margin="197,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.417,2.522"/>
+            <TextBox x:Name="tb_prezime" HorizontalAlignment="Left" Height="23" Margin="197,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.017,0.043"/>
+            <Label Content="Ime : " HorizontalAlignment="Left" Margin="71,92,0,0" VerticalAlignment="Top"/>
+            <Label Content="Prezime:" HorizontalAlignment="Left" Margin="71,123,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="dat_rodj" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top"/>
+            <Label Content="Datum Rodjenja:" HorizontalAlignment="Left" Margin="71,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3,0.077"/>
+            <Label Content="Username:" HorizontalAlignment="Left" Margin="71,187,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tb_username" HorizontalAlignment="Left" Height="23" Margin="197,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tb_pass" HorizontalAlignment="Left" Height="23" Margin="197,218,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Password:" HorizontalAlignment="Left" Margin="71,218,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rb_DA" Content="DA" HorizontalAlignment="Left" Margin="197,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,-2"/>
+            <RadioButton x:Name="rb_NE" Content="NE" HorizontalAlignment="Left" Margin="265,255,0,0" VerticalAlignment="Top"/>
+            <Label Content="Predstavnik Kuce:" HorizontalAlignment="Left" Margin="76,249,0,0" VerticalAlignment="Top"/>
+            <Image Margin="390,123,86,175" Source="1401475955_home.png" Stretch="Fill" Width="156" Height="151" RenderTransformOrigin="0.327,0.947"/>
+            <Button x:Name="b_spasi_ucenika" Content="Spasi Profesora" HorizontalAlignment="Left" Margin="403,312,0,0" VerticalAlignment="Top" Width="143" Height="26" Click="b_spasi_ucenika_Click" />
+        </Grid>
+
+    </Grid>
+</Window>

@@ -73,7 +73,36 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="hogwarts_login_2.xaml">
+    <Compile Include="GridWindow.xaml.cs">
+      <DependentUpon>GridWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Grid_profesori.xaml.cs">
+      <DependentUpon>Grid_profesori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor_dodavanje.xaml.cs">
+      <DependentUpon>Profesor_dodavanje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabProfesor.xaml.cs">
+      <DependentUpon>TabProfesor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabUcenik.xaml.cs">
+      <DependentUpon>TabUcenik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ucenik_dodavanje.xaml.cs">
+      <DependentUpon>Ucenik_dodavanje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Studentska_sluzba.xaml.cs">
+      <DependentUpon>Studentska_sluzba.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GridWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Grid_profesori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="hogwarts_login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -85,13 +114,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="hogwarts_login_2.xaml.cs">
-      <DependentUpon>hogwarts_login_2.xaml</DependentUpon>
+    <Compile Include="hogwarts_login.xaml.cs">
+      <DependentUpon>hogwarts_login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Profesor_dodavanje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabProfesor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TabUcenik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ucenik_dodavanje.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Studentska_sluzba.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -117,18 +166,41 @@
     <None Include="logo_sivi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="nor.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Starry_Night_at_La_Silla.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="1401464730_my-documents.png" />
+    <Resource Include="1401464911_trash-empty.png" />
+    <Resource Include="1401466376_potter.png" />
+    <Resource Include="broom-icon.png" />
+    <BlendEmbeddedFont Include="Fonts\TEMPSITC.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
     <Resource Include="gryffindor.png" />
+    <Resource Include="harrypotter4_256.png" />
+    <Resource Include="hogwarts_by_jeanhar-d41b8a8_NEW.jpg" />
     <Resource Include="hufflepuff.png" />
+    <Resource Include="images.jpg" />
+    <Resource Include="index.jpg" />
+    <Resource Include="light-gray-button-rectangle-md.png" />
+    <Resource Include="LOGIN_fadeout.png" />
+    <Resource Include="night-sky-astrophotography.jpg" />
+    <Resource Include="night-sky-stars.jpg" />
     <Resource Include="ravenclaw.png" />
     <Resource Include="slovo.png" />
     <Resource Include="slytherin.png" />
@@ -150,7 +222,26 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hat-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1401475955_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1402496670_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trash-full-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hogwarts_Projekat - Copy\DAL\DAL.csproj">
+      <Project>{23053fe5-8aac-43b6-b893-082ee3f705ef}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\.NETFramework\v4.5\Microsoft.Expression.Blend.WPF.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

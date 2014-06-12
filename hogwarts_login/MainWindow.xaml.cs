@@ -44,19 +44,33 @@ namespace hogwarts_login
         {
         	hogwarts_login_2 login2=new hogwarts_login_2("Ravenclaw");
             login2.Show();
-            this.Close();
+            //this.Close();
         }
 		private void button_huff_Click(object sender, System.Windows.RoutedEventArgs e)
         {
         	hogwarts_login_2 login2=new hogwarts_login_2("Hufflepuff");
             login2.Show();
-            this.Close();
+            //this.Close();
         }
 		private void button_sly_Click(object sender, System.Windows.RoutedEventArgs e)
         {
         	hogwarts_login_2 login2=new hogwarts_login_2("Slytherin");
             login2.Show();
-            this.Close();
+            //this.Close();
+        }
+
+        private void b_studentska_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 main_studnetska = new Window2();
+            main_studnetska.Show();
+            //this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            hogwarts_login_2 login2 = new hogwarts_login_2("Profesor");
+            login2.Show();
+            //this.Close();
         }
     }
 }
